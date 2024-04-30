@@ -38,6 +38,7 @@ func main() {
 	// fmt.Println("3rd argument:", os.Args[3])
 	// fmt.Println("Number of items inside os.Args", len(os.Args))
 
+
 	// ---------------------------------------------------------
 	// EXERCISE: Make It Blue
 	//
@@ -47,10 +48,37 @@ func main() {
 	// EXPECTED OUTPUT
 	//  blue
 
-	color := "green"
-	color = "blue"
-
-	fmt.Println(color)
+	// SOLUTION
+	// color := "green"
+	// color = "blue"
+	// fmt.Println(color)
 	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Variables To Variables
+	//
+	//  1. Change the value of `color` variable to "dark green"
+	//  2. Do not assign "dark green" to `color` directly
+	//     Instead, use the `color` variable again while assigning to `color`
+	//  3. Print it
+	//
+	// RESTRICTIONS
+	//  WRONG ANSWER, DO NOT DO THIS:
+	//  `color = "dark green"`
+	//
+	// HINT
+	//  + operator can concatenate string values
+	//
+	//  Example:
+	//  "h" + "e" + "y" returns "hey"
+	//
+	// EXPECTED OUTPUT
+	//  dark green
+
+	// SOLUTION
+	color := "green"
+	fmt.Println("dark " + color)
+// ---------------------------------------------------------
 
 }
