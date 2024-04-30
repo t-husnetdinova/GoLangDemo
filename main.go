@@ -1,14 +1,16 @@
 package main
 
-import "fmt"
-import "github.com/t-husnetdinova/GoLangDemo/hello"
-import "rsc.io/quote"
+import ("fmt"
+		"github.com/t-husnetdinova/GoLangDemo/hello"
+		"rsc.io/quote"
+		"os"
+)
 
 func main() {
 	// call HelloWorld function
 	fmt.Println(hello.HelloWorld())
 
-	
+
 	// test out quote function
 	fmt.Println(quote.Go())
 
@@ -21,5 +23,16 @@ func main() {
 	fmt.Println(speed) 
 
 
-	//
+	// Args
+	// args's type is a slice of a string (a slice can store multiple string values, they are unnamed)
+	// to see the difference between printf and println
+	fmt.Printf("%#v\n", os.Args)
+	fmt.Println(os.Args)
+
+	fmt.Println("Path:", os.Args[0])
+	fmt.Println("1st argument:", os.Args[1])
+	fmt.Println("2nd argument:", os.Args[2])
+	fmt.Println("3rd argument:", os.Args[3])
+	fmt.Println("Number of items inside os.Args", len(os.Args))
+
 }
