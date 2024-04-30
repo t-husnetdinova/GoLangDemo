@@ -77,8 +77,29 @@ func main() {
 	//  dark green
 
 	// SOLUTION
-	color := "green"
-	fmt.Println("dark " + color)
-// ---------------------------------------------------------
+	// color := "green"
+	// fmt.Println("dark " + color)
+	// ---------------------------------------------------------
 
+
+	// ---------------------------------------------------------
+	// EXERCISE: Assign With Expressions
+	//
+	//  1. Multiply 3.14 with 2 and assign it to `n` variable
+	//  2. Print the `n` variable
+	//
+	// HINT
+	//  Example: 3 * 2 = 6
+	//  * is the product operator (it multiplies numbers)
+	//
+	// EXPECTED OUTPUT
+	//  6.28
+
+	// SOLUTION
+	n := 0.
+
+	// answer needs to be a float64 assigned to variable n
+	n = 3.14*2
+	fmt.Println(n)
+	// --------------------------------------------------------
 }
