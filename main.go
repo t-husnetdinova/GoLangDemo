@@ -103,6 +103,8 @@ func main() {
 	// fmt.Println(n)
 	// --------------------------------------------------------
 
+
+	// --------------------------------------------------------
 	// EXERCISE: Find the Rectangle's Perimeter
 	//
 	//  1. Find the perimeter of a rectangle
@@ -116,12 +118,32 @@ func main() {
 	//  22
 	
 	// SOLUTION
-	var (
-		perimeter int
-		width, height = 5, 6
-	)
+	// var (
+	// 	perimeter int
+	// 	width, height = 5, 6
+	// )
 
-	perimeter = 2 * (width + height)
-	fmt.Println(perimeter)	
+	// perimeter = 2 * (width + height)
+	// fmt.Println(perimeter)	
+	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Multi Assign
+	//
+	//  1. Assign "go" to `lang` variable
+	//     and assign 2 to `version` variable
+	//     using a multiple assignment statement
+	//  2. Print the variables
+	// EXPECTED OUTPUT
+	//  go version 2
+
+	// SOLUTION
+	var (
+		lang    string
+		version int
+	)
+	lang, version = "go", 2
+	fmt.Println(lang, "version", version)
 	// ---------------------------------------------------------
 }
