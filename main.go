@@ -96,10 +96,32 @@ func main() {
 	//  6.28
 
 	// SOLUTION
-	n := 0.
+	// n := 0.
 
 	// answer needs to be a float64 assigned to variable n
-	n = 3.14*2
-	fmt.Println(n)
+	// n = 3.14*2
+	// fmt.Println(n)
 	// --------------------------------------------------------
+
+	// EXERCISE: Find the Rectangle's Perimeter
+	//
+	//  1. Find the perimeter of a rectangle
+	//     Its width is  5
+	//     Its height is 6
+	//  2. Assign the result to the `perimeter` variable
+	//  3. Print the `perimeter` variable
+	// HINT
+	//  Formula = 2 times the width and height
+	// EXPECTED OUTPUT
+	//  22
+	
+	// SOLUTION
+	var (
+		perimeter int
+		width, height = 5, 6
+	)
+
+	perimeter = 2 * (width + height)
+	fmt.Println(perimeter)	
+	// ---------------------------------------------------------
 }
