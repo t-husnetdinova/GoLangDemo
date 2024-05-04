@@ -280,9 +280,21 @@ func main() {
 	//  5.5
 
 	// SOLUTION
-	fmt.Println(5.5)
+	// fmt.Println(5.5)
 	// ---------------------------------------------------------
 
+
+	// ---------------------------------------------------------
+	// EXERCISE: Convert and Fix #4
+	//  Fix the code.
+	//
+	// EXPECTED OUTPUT
+	//  9.5
+
+	// SOLUTION
+	age := 2
+	fmt.Println(7.5 + float64(age))
+	// ---------------------------------------------------------
 }
 
 // THIS IS FOR EXCERCISE: Multi Short Func (must be called outside of main)
