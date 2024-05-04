@@ -329,13 +329,31 @@ func main() {
 	//  There are 3 names.
 
 	// UNCOMMENT & FIX THIS CODE
-	count := len(os.Args) - 1
+	// count := len(os.Args) - 1
 
-	// UNCOMMENT IT & THEN DO NOT TOUCH THIS CODE
-	fmt.Printf("There are %d names.\n", count)
+	// // UNCOMMENT IT & THEN DO NOT TOUCH THIS CODE
+	// fmt.Printf("There are %d names.\n", count)
 
 	// run like this:
 	// $ go run main.go bilbo balbo bungo
+	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Print the Path
+	//
+	//  Print the path of the running program by getting it
+	//  from `os.Args` variable.
+	//
+	// HINT
+	//  Use `go build` to build your program.
+	//  Then run it using the compiled executable program file.
+	//
+	// EXPECTED OUTPUT SHOULD INCLUDE THIS
+	//  myprogram
+
+	// SOLUTION
+	fmt.Println(os.Args[0])
 	// ---------------------------------------------------------
 }
 
