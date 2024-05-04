@@ -239,8 +239,7 @@ func main() {
 	//  secret/
 
 	// SOLUTION
-	var dir string
-	dir, _ = path.Split("secret/file.txt")
+	dir, _ := path.Split("secret/file.txt")
 	fmt.Println(dir)
 	// ---------------------------------------------------------
 
