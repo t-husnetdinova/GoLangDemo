@@ -1,9 +1,7 @@
 package main
 
-import ("fmt"
-		// "github.com/t-husnetdinova/GoLangDemo/hello"
-		// "rsc.io/quote"
-		// "os"
+import (
+	"fmt"
 )
 
 func main() {
@@ -191,11 +189,32 @@ func main() {
 
 	// SOLUTION
 	// ADD YOUR DECLARATIONS HERE
-	_, b := multi()
-	fmt.Println(b)
+	// _, b := multi()
+	// fmt.Println(b)
 	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Swapper
+	//  1. Change `color` to "orange"
+	//     and `color2` to "green" at the same time
+	//     (use multiple-assignment)
+	//  2. Print the variables
+	//
+	// EXPECTED OUTPUT
+	//  orange green
+
+	// SOLUTION
+	color, color2 := "red", "blue"
+	color, color2 = "orange", "green"
+	fmt.Println(color, color2)
+	// ---------------------------------------------------------
+
 }
 
-func multi() (int, int) {
-	return 5, 4
-}
+// THIS IS FOR EXCERCISE: Multi Short Func (must be called outside of main)
+// commenting this now because I might forget after I add a million other little exercises to this and comment this out
+// Hi, Future Tammy :) Hope you are having a good day!
+// func multi() (int, int) {
+// 	return 5, 4
+// }
