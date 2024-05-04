@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"path"
 )
 
 func main() {
@@ -220,9 +221,27 @@ func main() {
 	//  blue red
 
 	// SOLUTION
-	red, blue := "red", "blue"
-	red, blue = "blue", "red"
-	fmt.Println(red, blue)
+	// red, blue := "red", "blue"
+	// red, blue = "blue", "red"
+	// fmt.Println(red, blue)
+	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Discard The File
+	//  1. Print only the directory using `path.Split`
+	//  2. Discard the file part
+	//
+	// RESTRICTION
+	//  Use short declaration
+	//
+	// EXPECTED OUTPUT
+	//  secret/
+
+	// SOLUTION
+	var dir string
+	dir, _ = path.Split("secret/file.txt")
+	fmt.Println(dir)
 	// ---------------------------------------------------------
 
 }
