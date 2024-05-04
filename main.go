@@ -292,8 +292,29 @@ func main() {
 	//  9.5
 
 	// SOLUTION
-	age := 2
-	fmt.Println(7.5 + float64(age))
+	// age := 2
+	// fmt.Println(7.5 + float64(age))
+	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Convert and Fix #5
+	//  Fix the code.
+	//
+	// HINTS
+	//   maximum of int8  can be 127
+	//   maximum of int16 can be 32767
+	//
+	// EXPECTED OUTPUT
+	//  1127
+
+	// SOLUTION
+	min := int8(127)
+	max := int16(1000)
+
+	// FIX THE CODE HERE
+	// fmt.Println(int8(max) + min) // this prints 103
+	fmt.Println(max + int16(min))
 	// ---------------------------------------------------------
 }
 
