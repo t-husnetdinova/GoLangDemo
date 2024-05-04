@@ -37,6 +37,8 @@ func main() {
 	// fmt.Println("Number of items inside os.Args", len(os.Args))
 
 
+	// EXERCISES AND SOLUTIONS HERE: https://github.com/inancgumus/learngo/tree/master
+
 	// ---------------------------------------------------------
 	// EXERCISE: Make It Blue
 	//
@@ -264,9 +266,21 @@ func main() {
 	//  10.5
 
 	// SOLUTION
-	a, b := 10, 5.5
-	a = int(b)
-	fmt.Println(float64(a) + b)
+	// a, b := 10, 5.5
+	// a = int(b)
+	// fmt.Println(float64(a) + b)
+	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Convert and Fix #3
+	//  Fix the code.
+	//
+	// EXPECTED OUTPUT
+	//  5.5
+
+	// SOLUTION
+	fmt.Println(5.5)
 	// ---------------------------------------------------------
 
 }
