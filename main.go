@@ -205,9 +205,24 @@ func main() {
 	//  orange green
 
 	// SOLUTION
-	color, color2 := "red", "blue"
-	color, color2 = "orange", "green"
-	fmt.Println(color, color2)
+	// color, color2 := "red", "blue"
+	// color, color2 = "orange", "green"
+	// fmt.Println(color, color2)
+	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Swapper #2
+	//  1. Swap the values of `red` and `blue` variables
+	//  2. Print them
+	//
+	// EXPECTED OUTPUT
+	//  blue red
+
+	// SOLUTION
+	red, blue := "red", "blue"
+	red, blue = "blue", "red"
+	fmt.Println(red, blue)
 	// ---------------------------------------------------------
 
 }
