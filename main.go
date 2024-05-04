@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -309,12 +310,32 @@ func main() {
 	//  1127
 
 	// SOLUTION
-	min := int8(127)
-	max := int16(1000)
+	// min := int8(127)
+	// max := int16(1000)
 
 	// FIX THE CODE HERE
 	// fmt.Println(int8(max) + min) // this prints 103
-	fmt.Println(max + int16(min))
+	// fmt.Println(max + int16(min))
+	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Count the Arguments
+	//  Print the count of the command-line arguments
+	// INPUT
+	//  bilbo balbo bungo
+	//
+	// EXPECTED OUTPUT
+	//  There are 3 names.
+
+	// UNCOMMENT & FIX THIS CODE
+	count := len(os.Args) - 1
+
+	// UNCOMMENT IT & THEN DO NOT TOUCH THIS CODE
+	fmt.Printf("There are %d names.\n", count)
+
+	// run like this:
+	// $ go run main.go bilbo balbo bungo
 	// ---------------------------------------------------------
 }
 
