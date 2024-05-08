@@ -21,10 +21,10 @@ func main() {
 	// force := 2.5 // float64
 	// // first convert speed to float64, then convert it back to int to assing to itself
 	// speed = int(float64(speed) * force)
-	// fmt.Println(speed) 
+	// fmt.Println(speed)
 
 	// ---------------------------------------------------------
-	
+
 	// Args
 	// args's type is a slice of a string (a slice can store multiple string values, they are unnamed)
 	// to see the difference between printf and println
@@ -36,7 +36,6 @@ func main() {
 	// fmt.Println("2nd argument:", os.Args[2])
 	// fmt.Println("3rd argument:", os.Args[3])
 	// fmt.Println("Number of items inside os.Args", len(os.Args))
-
 
 	// EXERCISES AND SOLUTIONS HERE: https://github.com/inancgumus/learngo/tree/master
 
@@ -54,7 +53,6 @@ func main() {
 	// color = "blue"
 	// fmt.Println(color)
 	// ---------------------------------------------------------
-
 
 	// ---------------------------------------------------------
 	// EXERCISE: Variables To Variables
@@ -82,7 +80,6 @@ func main() {
 	// fmt.Println("dark " + color)
 	// ---------------------------------------------------------
 
-
 	// ---------------------------------------------------------
 	// EXERCISE: Assign With Expressions
 	//
@@ -104,7 +101,6 @@ func main() {
 	// fmt.Println(n)
 	// --------------------------------------------------------
 
-
 	// --------------------------------------------------------
 	// EXERCISE: Find the Rectangle's Perimeter
 	//
@@ -117,7 +113,7 @@ func main() {
 	//  Formula = 2 times the width and height
 	// EXPECTED OUTPUT
 	//  22
-	
+
 	// SOLUTION
 	// var (
 	// 	perimeter int
@@ -125,9 +121,8 @@ func main() {
 	// )
 
 	// perimeter = 2 * (width + height)
-	// fmt.Println(perimeter)	
+	// fmt.Println(perimeter)
 	// ---------------------------------------------------------
-
 
 	// ---------------------------------------------------------
 	// EXERCISE: Multi Assign
@@ -147,7 +142,6 @@ func main() {
 	// lang, version = "go", 2
 	// fmt.Println(lang, "version", version)
 	// ---------------------------------------------------------
-
 
 	// ---------------------------------------------------------
 	// EXERCISE: Multi Assign #2
@@ -175,7 +169,6 @@ func main() {
 	// fmt.Println("It is ", temp, " degrees")
 	// ---------------------------------------------------------
 
-
 	// ---------------------------------------------------------
 	// EXERCISE: Multi Short Func
 	//
@@ -196,7 +189,6 @@ func main() {
 	// fmt.Println(b)
 	// ---------------------------------------------------------
 
-
 	// ---------------------------------------------------------
 	// EXERCISE: Swapper
 	//  1. Change `color` to "orange"
@@ -213,7 +205,6 @@ func main() {
 	// fmt.Println(color, color2)
 	// ---------------------------------------------------------
 
-
 	// ---------------------------------------------------------
 	// EXERCISE: Swapper #2
 	//  1. Swap the values of `red` and `blue` variables
@@ -227,7 +218,6 @@ func main() {
 	// red, blue = "blue", "red"
 	// fmt.Println(red, blue)
 	// ---------------------------------------------------------
-
 
 	// ---------------------------------------------------------
 	// EXERCISE: Discard The File
@@ -245,7 +235,6 @@ func main() {
 	// fmt.Println(dir)
 	// ---------------------------------------------------------
 
-
 	// ---------------------------------------------------------
 	// EXERCISE: Convert and Fix
 	//  Fix the code by using the conversion expression.
@@ -257,7 +246,6 @@ func main() {
 	// a, b := 10, 5.5
 	// fmt.Println(float64(a) + b)
 	// ---------------------------------------------------------
-
 
 	// ---------------------------------------------------------
 	// EXERCISE: Convert and Fix #2
@@ -272,7 +260,6 @@ func main() {
 	// fmt.Println(float64(a) + b)
 	// ---------------------------------------------------------
 
-
 	// ---------------------------------------------------------
 	// EXERCISE: Convert and Fix #3
 	//  Fix the code.
@@ -283,7 +270,6 @@ func main() {
 	// SOLUTION
 	// fmt.Println(5.5)
 	// ---------------------------------------------------------
-
 
 	// ---------------------------------------------------------
 	// EXERCISE: Convert and Fix #4
@@ -296,7 +282,6 @@ func main() {
 	// age := 2
 	// fmt.Println(7.5 + float64(age))
 	// ---------------------------------------------------------
-
 
 	// ---------------------------------------------------------
 	// EXERCISE: Convert and Fix #5
@@ -318,7 +303,6 @@ func main() {
 	// fmt.Println(max + int16(min))
 	// ---------------------------------------------------------
 
-
 	// ---------------------------------------------------------
 	// EXERCISE: Count the Arguments
 	//  Print the count of the command-line arguments
@@ -338,7 +322,6 @@ func main() {
 	// $ go run main.go bilbo balbo bungo
 	// ---------------------------------------------------------
 
-
 	// ---------------------------------------------------------
 	// EXERCISE: Print the Path
 	//
@@ -353,7 +336,34 @@ func main() {
 	//  myprogram
 
 	// SOLUTION
-	fmt.Println(os.Args[0])
+	// fmt.Println(os.Args[0])
+	// ---------------------------------------------------------
+
+
+	// ---------------------------------------------------------
+	// EXERCISE: Print Your Name
+	//
+	//  Get it from the first command-line argument
+	//
+	// INPUT
+	//  Call the program using your name
+	// EXPECTED OUTPUT
+	//  It should print your name
+	// EXAMPLE
+	//  go run main.go inanc
+	//    inanc
+	// BONUS: Make the output like this:
+	//
+	//  go run main.go inanc
+	//    Hi inanc
+	//    How are you?
+
+	// SOLUTION
+	fmt.Println(os.Args[1])
+
+	// bonus
+	fmt.Println("Hello", os.Args[1])
+	fmt.Println("How are you?")
 	// ---------------------------------------------------------
 }
 
